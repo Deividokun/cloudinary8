@@ -1,7 +1,6 @@
 const { 
   getMangaById, 
   getMangaByCategory, 
-  getMangaByPrice, 
   getMangas, 
   postManga, 
   putManga, 
@@ -11,7 +10,6 @@ const mangasRouter = require("express").Router();
 const { isAuth, isAdmin } = require("../../middleware/auth.js");
 const upload = require("../../middleware/file.js");
 
-mangasRouter.get("/precio/:price", getMangaByPrice); 
 mangasRouter.get("/categoria/:categoria", getMangaByCategory); 
 mangasRouter.get("/:id", getMangaById); 
 mangasRouter.get("/", getMangas); 
