@@ -22,16 +22,6 @@ const getMangaByCategory = async (req, res, next) => {
   }
 };
 
-const getMangaByPrice = async (req, res, next) => {
-  try {
-    const { price } = req.params;
-    const mangas = await Mangas.find({ precio: { $lt: price } });
-    return res.status(200).json(mangas);
-  } catch (error) {
-    return res.status(400).json("No se encontró ningún manga con ese precio");
-  }
-};
-
 const getMangas = async (req, res, next) => {
   try {
     const mangas = await Mangas.find({ verified: true });
@@ -101,7 +91,6 @@ const deleteManga = async (req, res, next) => {
 module.exports = {
   getMangaById,
   getMangaByCategory,
-  getMangaByPrice,
   getMangas,
   postManga,
   putManga,
