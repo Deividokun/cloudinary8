@@ -10,8 +10,8 @@ const storage = new CloudinaryStorage({
     let folder = "animebellaco"; 
     if (req.baseUrl.includes("users")) {
       folder = "users"; 
-    } else if (req.baseUrl.includes("cuadros")) {
-      folder = "cuadros"; 
+    } else if (req.baseUrl.includes("mangas")) {
+      folder = "mangas"; 
     }
     */
 
