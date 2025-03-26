@@ -90,3 +90,6 @@ Cada manga puede estar relacionado con un usuario mediante el campo `mangas` en 
 ## Licencia  
 Este proyecto está bajo la licencia **ISC**.
 
+## Licencia  
+Este proyecto está bajo la licencia **ISC**.
+
